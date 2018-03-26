@@ -1,13 +1,13 @@
 package main
 
-import . "github.com/visionmedia/go-debug"
 import "time"
+import "github.com/visionmedia/go-debug"
 
-var a = Debug("multiple:a")
-var b = Debug("multiple:b")
-var c = Debug("multiple:c")
+var a = godebug.Debug("multiple:a")
+var b = godebug.Debug("multiple:b")
+var c = godebug.Debug("multiple:c")
 
-func work(debug DebugFunction, delay time.Duration) {
+func work(debug godebug.DebugFunction, delay time.Duration) {
 	for {
 		debug("doing stuff")
 		time.Sleep(delay)

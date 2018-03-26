@@ -16,10 +16,10 @@ $ go get github.com/visionmedia/go-debug
 ```go
 package main
 
-import . "github.com/visionmedia/go-debug"
 import "time"
+import "github.com/visionmedia/go-debug"
 
-var debug = Debug("single")
+var debug = godebug.Debug("single")
 
 func main() {
   for {
